@@ -34,6 +34,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'traxBotWeb.apps.TraxbotwebConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -76,11 +77,7 @@ WSGI_APPLICATION = 'traxBot.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
-DATABASES = {
-    'default' : {
-        'ENGINE' : 'djongo', 'NAME' : 'traxdb', 
-    }
-}
+DATABASES = {   'default': {      'ENGINE': 'djongo',      'NAME': 'traxdb',   }}
 
 
 # Password validation
