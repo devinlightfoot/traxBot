@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang = 'en'>
+    <head>
+        {% load static %}
+        <link rel = 'stylesheet' type = 'text/css' href = "{% static 'traxBotWeb/style.css' %}">
+        <base href = "http://localhost:8000/traxBotWeb/">
+        <title>About traxBot</title>
+        <meta name = "author" content = "Devin Lightfoot"/>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    </head>
+    <body>
+        <h1>About traxBot</h1>
+        <p id = 'about'>The goal of traxBot is to porivde a robot vacuum cleaner that is unencumbered by stairs, a feature common in many households.<br><br>
+        My design is loosely based upon that of other robot vacuum cleaners, with several key distinctions.<br><br>
+        Instead of wheels for mobility, I have opted for treads, as they provide a more easily manufacurable mobility system for traversing stairs.<br><br>
+        In addition to the randomized clearing pattern achieved by merely changing drive direction when an obstacle is detected, 
+        the traxBot will have the capability to map your household and determine the most efficient algorithm for clearing said household.<br><br>
+        As the creator of traxBot, I firmly believe that your personal data should remain private, and it is my goal in the creation of this machine
+        to ensure that the data of your household remains within it, as much as possible<br><br>
+        To do this, all computation will occur client-side, through a raspberry pi in the traxBot, that will hopefully minimiize the exposure of your valuable, personal data.</p>
+        <div id = 'foot'>
+            <footer>
+                <p>Created by Devin Lightfoot<br>
+                <a href = 'https://github.com/devinlightfoot/traxBot'>Github</a>
+                <a href = 'mailto:euler2171828@gmail.com'>Gmail</a><br>
+                <a href = '/traxBotWeb/'>Back to traxBotWeb</a></p>
+            </footer>
+        </div>
+    </body>
+</html>

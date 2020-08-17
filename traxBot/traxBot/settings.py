@@ -77,8 +77,8 @@ WSGI_APPLICATION = 'traxBot.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
-DATABASES = {   'default': {      'ENGINE': 'djongo',      'NAME': 'traxdb',   }}
-
+DATABASES = {   'default': {      'ENGINE': 'djongo',      'NAME': 'traxWebdb', }}
+ENFORCE_SCHEMA:  False
 
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators
