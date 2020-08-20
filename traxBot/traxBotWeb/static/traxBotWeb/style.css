@@ -23,8 +23,8 @@ a{
 body{
     position: relative;
     min-height: 100vh;
-    border-style: solid;
-    border-color: black;
+    /*border-style: solid;
+    border-color: black;*/
     background: linear-gradient(#ACF39D, #86BBD8);
     color: #595758;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
