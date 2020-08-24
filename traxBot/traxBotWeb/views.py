@@ -13,7 +13,7 @@ def  trax(request):
     pos = Position.objects.all()
     arr = []
     for p in pos:
-        temp = "(%f, %f)" % (p.xPos, p.yPos)
+        temp = "(%f, %f, %f)" % (p.xPos, p.yPos, p.zPos)
         arr.append(temp)
     ret = '\n'.join(arr)
     return(render(request, 'traxBotWeb/trax.html', {'ret' : ret}))
