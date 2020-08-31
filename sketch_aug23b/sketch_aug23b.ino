@@ -4,6 +4,7 @@ int in2Pin = 9;
 int trigPin = 6;
 int echoPin = 5;
 float duration, distance;
+boolean close = false;
 void setup() {
   pinMode(enPin, OUTPUT);
   pinMode(in1Pin, OUTPUT);
@@ -22,9 +23,20 @@ void loop() {
  duration = pulseIn(echoPin, HIGH);
  distance = duration / 58;
  Serial.println(distance);
+ if(close){
+    digitalWrite(in1Pin, false);
+    digitalWrite(in2Pin, true);
+ }
+ else{
+  digitalWrite(in1Pin, true);
+  digitalWrite(in2Pin, false);
+ }
  analogWrite(enPin, 100);
  if(distance <= 2.5){
-   digitalWrite(in1Pin, false);
-   digitalWrite(in2Pin, true);
+   close = true;
+   Serial.println("test");
+  }
+  else{
+    close = false;
   }
 }
